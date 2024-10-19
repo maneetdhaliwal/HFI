@@ -12,5 +12,10 @@ edit auth_key to hold your token:
 also, change the email to the one you entered for the form:
 ```user_agent = 'john.doe@jobs.com'```
 
+# Running the program
 run: 
 ```pip install -r requirements.txt```
+
+# Results - October 19th, 2024
+
+66,779 jobs so far -- goal is to have 0 by 2060. Automation must conquer 🚀
