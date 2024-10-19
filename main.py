@@ -91,7 +91,7 @@ if response_countries.status_code == 200:
     formatted_dates = [date.strftime('%Y-%m-%d') for date in date_labels]
 
     # Prepare job counts: only the first bar shows a job count, others are 0
-    job_counts = total_jobs + [0] * (len(formatted_dates) - 1)
+    job_counts = [total_jobs] + [0] * (len(formatted_dates) - 1)
 
     # Plotting
     plt.figure(figsize=(12, 6))
@@ -107,24 +107,3 @@ if response_countries.status_code == 200:
     plt.grid(axis='y')
 
     plt.show()
-
-#####
-
-
-# url_states = 'https://data.usajobs.gov/api/codelist/countrysubdivisions'
-# headers = {
-#     "User-Agent": user_agent,
-#     "Authorization-Key": auth_key
-# }
-
-# params = {
-#     'country': 'US'  # Change this if necessary based on the API documentation
-# }
-
-# response_states = requests.get(url_states, headers=headers, params=params)
-
-# if response_states.status_code == 200:
-#     states_data = response_states.json()
-#     print(states_data)
-# else:
-#     print(f'Error: {response_states.status_code}, {response_states.text}')
