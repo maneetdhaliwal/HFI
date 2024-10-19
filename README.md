@@ -12,3 +12,5 @@ edit auth_key to hold your token:
 also, change the email to the one you entered for the form:
 ```user_agent = 'john.doe@jobs.com'```
 
+run: 
+```pip install -r requirements.txt```
