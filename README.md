@@ -6,8 +6,7 @@ Data from USAJOBS https://developer.usajobs.gov/
 # Create a token
 Head to https://developer.usajobs.gov/apirequest/ to create a token
 
-edit auth_key to hold your token
-example:
+edit auth_key to hold your token:
 ```auth_key = 'DG0983LK42M0RS'```
 
 also, change the email to the one you entered for the form:
